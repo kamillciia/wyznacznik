@@ -1,59 +1,24 @@
 #include <stdio.h>
+void wczytaj{double *a1, double *b1, double *c1, double *a2, double *b2, double *c2){
+	puts("podaj wspolczynnik a1");
+        scanf("%lf",a1);
+        puts("podaj wspolczynnik b1");
+        scanf("%lf",b1);
+        puts("podaj wspolczynnik c1");
+        scanf("%lf",c1);
+        puts("podaj wspolczynnik a2");
+        scanf("%lf",a2);
+        puts("podaj wspolczynnik b2");
+        scanf("%lf",b2);
+        puts("podaj wspolczynnik c2");
+	scanf("%lf",c2);
+}
+	
+int main(){
 
-int mnoz(int a, int b)
-	{
-	return a*b;
-	}
-int dodaj(int a, int b)
-	{
-	return a+b;
-	}
-int odejmij(int a, int b)
-	{
-	return a-b;
-	}
-int dziel(int a, int b)
-	{
-	return a/b;
-	}
-int main(void)
-	{
+	double a1,b1,c1,a2,b2,c2;
+	
+	wczytaj(&a1, &b1, &c1, &a2, &b2, &c2);
 
-	int a,b;
-	char wybor;
-	printf("podaj wartosc a: ");
-	scanf("%i",&a);
-	printf("podaj wartosc b: ");
-	scanf("%i", &b);
-	printf("podaj dzialanie: ");
-	scanf("\n%c",&wybor);
-	if(wybor=='*')
-	{
-	printf("wynik mnozenia: %i\n",mnoz(a, b));
-	}
-		else
-		{
-		if(wybor=='+')
-		{
-		printf("Wynik dodawania: %i\n",dodaj(a, b));
-		}
-			else
-			{
-			if(wybor=='-')
-			{
-			printf("Wynik odejmowania: %i\n", odejmij(a, b));
-			}
-				else
-				{
-				if(wybor=='/')
-				{
-				printf("Wynik dzielenia: %i\n", dziel(a, b));
-				}
-				else
-				{
-				}
-		}
-			}
-	};
 	return 0;
 }
